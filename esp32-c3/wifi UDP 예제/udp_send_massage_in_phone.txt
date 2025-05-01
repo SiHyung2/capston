@@ -1,0 +1,17 @@
+# ⚠️모바일 파이썬에서 작성할 것
+
+
+import socket
+
+# ESP32 AP에 연결한 후 실행해야 함
+server_ip = "192.168.4.1"
+server_port = 12345
+
+udp = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+udp.sendto(b'Hello ESP32!', (server_ip, server_port))
+
+# 응답 받기
+data, addr = udp.recvfrom(1024)
+print("Received:", data.decode())
+
+udp.close()
