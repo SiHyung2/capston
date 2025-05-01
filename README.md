@@ -1,7 +1,7 @@
 ## esp32 통신방법 ##
 💡[제블로그의 포스팅을 참고](https://myblog6254.tistory.com/27)
 
-다음의 내용만 보면됨
++ 다음의 내용만 보면됨
    + wifi ap
    + wifi sta
    + blu
